@@ -156,4 +156,10 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.6321869, 39.783478, 
 [node name="Box42" parent="." unique_id=763262910 instance=ExtResource("2_yautc")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 10.013405, 36.307526, 0)
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=453619945]
+transform = Transform3D(1, 0, 0, 0, 0.7086844, 0.70552564, 0, -0.70552564, 0.7086844, 0, 1, 6)
+light_color = Color(0.6682405, 0.6682405, 1.0630565, 1)
+light_energy = 0.7
+script = ExtResource("1_jbqir")
+
 [editable path="Node3D"]

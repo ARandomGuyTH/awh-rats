@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://b4pu5r0jr811y" path="res://scenes/player/player.tscn" id="2_iuonh"]
 [ext_resource type="Script" uid="uid://din41qm72vdjw" path="res://scenes/main/world.gd" id="2_k2fmo"]
 [ext_resource type="Script" uid="uid://bjqbg0kgrwk8d" path="res://scenes/main/camera.gd" id="3_l3cfh"]
-[ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="5_6q06x"]
 [ext_resource type="PackedScene" uid="uid://cqnb2xrxalaar" path="res://scenes/player/mouse_1.tscn" id="5_ow5a4"]
 
 [node name="GameController" type="CanvasLayer" unique_id=293849601 node_paths=PackedStringArray("world", "UI")]
@@ -28,7 +27,7 @@ model = NodePath("mouse1")
 [node name="mouse1" parent="World/Player1" unique_id=848837630 instance=ExtResource("5_ow5a4")]
 transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, 0, -0.44023132, 0)
 
-[node name="Skeleton3D" parent="World/Player1/mouse1/Armature" parent_id_path=PackedInt32Array(848837630, 596943628) index="0" unique_id=1877391148]
+[node name="Skeleton3D" parent="World/Player1/mouse1/Armature" parent_id_path=PackedInt32Array(848837630, 297578459) index="0" unique_id=1394445333]
 bones/1/rotation = Quaternion(-0.026852643, 1.08001035e-16, 1.08001035e-16, 0.9996395)
 bones/3/rotation = Quaternion(0.08645854, 1.18762934e-07, 1.0306662e-08, 0.99625546)
 bones/5/rotation = Quaternion(0.21898004, -1.1855351e-14, 5.2208907e-08, 0.97572935)
@@ -46,10 +45,6 @@ model = NodePath("mouse1")
 
 [node name="mouse1" parent="World/Player2" unique_id=1427093980 instance=ExtResource("5_ow5a4")]
 transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, 0, -0.46063232, 0)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" unique_id=567865195]
-transform = Transform3D(1, 0, 0, 0, 0.7086844, 0.70552564, 0, -0.70552564, 0.7086844, 0, 1, 6)
-script = ExtResource("5_6q06x")
 
 [node name="UI" type="Control" parent="." unique_id=1252852173]
 layout_mode = 3

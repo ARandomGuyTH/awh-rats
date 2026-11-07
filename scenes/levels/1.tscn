@@ -1,7 +1,89 @@
 [gd_scene format=3 uid="uid://dfpqqi4427h3m"]
 
 [ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="1_ie7v7"]
+[ext_resource type="PackedScene" uid="uid://d8y1o4nmtvi7" path="res://scenes/objects/brickWall.tscn" id="2_le1x0"]
+[ext_resource type="Texture2D" uid="uid://dsn1xynfek0tm" path="res://assets/textures/basementWall.PNG" id="3_x3ltn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x3ltn"]
+size = Vector3(54, 1, 18.036377)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f00r8"]
+size = Vector3(53.932785, 0.90792084, 18.149658)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f00r8"]
+albedo_texture = ExtResource("3_x3ltn")
+uv1_scale = Vector3(0.3, 0.3, 0.3)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_0absb"]
+material = SubResource("StandardMaterial3D_f00r8")
+size = Vector3(7.663086, 45.99144, 10.918457)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_68ra0"]
+size = Vector3(7.5705566, 28.337769, 7.8168945)
 
 [node name="1" type="Node3D" unique_id=1546260991]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.371521, 0)
 script = ExtResource("1_ie7v7")
 metadata/_custom_type_script = "uid://mch6ywhqvbxs"
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=1226183818]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=481538193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.262695, -1.6668723, -2.0259705)
+shape = SubResource("BoxShape3D_x3ltn")
+
+[node name="Node3D" parent="." unique_id=53726933 instance=ExtResource("2_le1x0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6651917, -0.9151764, -3.9184008)
+
+[node name="MeshInstance3D" parent="Node3D" index="0" unique_id=41841136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2218323, 21.96817, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2141614967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.139389, -1.6735373, -2.2446508)
+mesh = SubResource("BoxMesh_f00r8")
+
+[node name="Node3D2" type="Node3D" parent="." unique_id=509997771]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D2" unique_id=1818733834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.369548, 21.227173, 1.583252)
+mesh = SubResource("BoxMesh_0absb")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D2" unique_id=1212188702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.409637, 21.47586, 1.3635025)
+mesh = SubResource("BoxMesh_0absb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1215596580]
+transform = Transform3D(0.7176554, -0.49132705, 0.49352676, 1.2581013e-08, 0.7086844, 0.70552564, -0.6963985, -0.5063242, 0.5085911, 0, 1, 6)
+light_color = Color(0.6682405, 0.6682405, 1.0630565, 1)
+light_energy = 0.7
+script = ExtResource("1_ie7v7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="DirectionalLight3D" unique_id=519282295]
+transform = Transform3D(-0.94258296, -0.17376673, -0.28520688, -0.10446775, -0.6577209, 0.7459827, -0.31721342, 0.73294526, 0.60180354, 0, 1.0000002, 6.000001)
+light_color = Color(0.6682405, 0.6682405, 1.0630565, 1)
+light_energy = 0.7
+script = ExtResource("1_ie7v7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1488254769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19554901, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=842015081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2799606, 12.231873, 3.4084473)
+shape = SubResource("BoxShape3D_68ra0")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1300250592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.840141, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=852691199]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4158783, 12.231873, 3.4084473)
+shape = SubResource("BoxShape3D_68ra0")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1955762783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.932137, 4.4174805, 0)
+light_color = Color(1, 0.39215687, 0, 1)
+light_energy = 5.0
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[editable path="Node3D"]

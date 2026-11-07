@@ -35,6 +35,10 @@ folder_colors={
 "res://scenes/": "purple"
 }
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 player1left={

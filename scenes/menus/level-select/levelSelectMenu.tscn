@@ -9,63 +9,65 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="." unique_id=398532201]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 50
-text = "LEVEL SELECT"
-
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1018400841]
+[node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=728966239]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -75.0
-offset_top = -75.0
-offset_right = 75.0
-offset_bottom = 75.0
+offset_left = -547.0
+offset_top = -188.5
+offset_right = 547.0
+offset_bottom = 188.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=1538394187]
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=398532201]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "LEVEL SELECT"
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer" unique_id=1018400841]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/CenterContainer" unique_id=1538394187]
 layout_mode = 2
 columns = 5
 
-[node name="LevelSelectButton2" parent="CenterContainer/GridContainer" unique_id=788538715 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton2" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=788538715 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton" parent="CenterContainer/GridContainer" unique_id=156843625 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=156843625 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton3" parent="CenterContainer/GridContainer" unique_id=230521049 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton3" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=230521049 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton4" parent="CenterContainer/GridContainer" unique_id=1318846670 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton4" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=1318846670 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton5" parent="CenterContainer/GridContainer" unique_id=840287618 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton5" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=840287618 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton6" parent="CenterContainer/GridContainer" unique_id=760236267 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton6" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=760236267 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton7" parent="CenterContainer/GridContainer" unique_id=1869267217 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton7" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=1869267217 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton8" parent="CenterContainer/GridContainer" unique_id=356464955 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton8" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=356464955 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton9" parent="CenterContainer/GridContainer" unique_id=772737343 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton9" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=772737343 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
 
-[node name="LevelSelectButton10" parent="CenterContainer/GridContainer" unique_id=1622075373 instance=ExtResource("1_6h8r3")]
+[node name="LevelSelectButton10" parent="HBoxContainer/CenterContainer/GridContainer" unique_id=1622075373 instance=ExtResource("1_6h8r3")]
 layout_mode = 2
+
+[node name="Node" type="Node" parent="HBoxContainer/CenterContainer" unique_id=572200430]

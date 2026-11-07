@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://hl2d5ooemce3"]
+
+[node name="1ui" type="Control" unique_id=194384065]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1399432707]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -597.5
+offset_top = -263.5
+offset_right = 597.5
+offset_bottom = 263.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=808796578]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=120382057]
+custom_minimum_size = Vector2(0, 750)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "press WASD and ↑ ↓ ← → to move"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1279883670]
+layout_mode = 2

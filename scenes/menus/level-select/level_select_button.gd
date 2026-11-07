@@ -15,3 +15,4 @@ func _pressed() -> void:
 	if is_unlocked:
 		Global.currentLevel = level
 		Global.game_controller.change_world_scene(levelPath+str(level)+ ".tscn")
+		Global.game_controller.change_ui_scene(levelPath+str(level)+ "UI.tscn")		
