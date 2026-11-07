@@ -24,9 +24,7 @@ func _process(delta: float) -> void:
 		t += max(player2vel.x, player1vel.x) * delta
 	elif player2vel.x < 0 and player1vel.x < 0:
 		t += min(player2vel.x, player1vel.x) * delta
-	elif abs(player2vel.x) > abs(player1vel.x):
-		t += player2vel.x * delta
 	else:
-		t += player1vel.x * delta
+		t += (player1vel.x+player2vel.x) * delta
 	
 	t = max(t, 0.0)
