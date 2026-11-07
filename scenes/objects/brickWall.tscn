@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://d8y1o4nmtvi7"]
 
-[ext_resource type="Texture2D" uid="uid://cflnledsjlija" path="res://assets/textures/stoneBrickWall.png" id="1_gpmfe"]
+[ext_resource type="Texture2D" uid="uid://dsn1xynfek0tm" path="res://assets/textures/basementWall.PNG" id="1_gpmfe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nd2uj"]
 albedo_texture = ExtResource("1_gpmfe")
-uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_scale = Vector3(0.3, 0.3, 0.3)
 uv1_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_gpje5"]

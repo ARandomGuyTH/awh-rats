@@ -37,7 +37,8 @@ func _physics_process(delta: float) -> void:
 		direction = Vector3.ZERO
 	else:
 		model.run()
-	model.look_at(model.global_position + target_dir, Vector3.UP)
+	if model.global_position != target_dir:
+		model.look_at(model.global_position + target_dir, Vector3.UP)
 	# Apply movement
 	velocity.x = direction.x * SPEED * delta
 	velocity.z = direction.z * SPEED * delta
