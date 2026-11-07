@@ -2,7 +2,8 @@ extends Node
 
 var game_controller : GameController
 var t : float = 0.0
-
+var maxLevel : int = 1
+var currentLevel : int = 1
 
 var player1pos := Vector3.ZERO
 var player2pos := Vector3.ZERO

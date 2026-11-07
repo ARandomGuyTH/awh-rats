@@ -4,6 +4,7 @@ class_name Player extends CharacterBody3D
 enum States {IDLE, RUNNING, JUMPING, FALLING}
 
 @export var player : String
+@export var model : Model
 
 # This variable keeps track of the character's current state.
 var state: States = States.IDLE
@@ -23,15 +24,6 @@ func set_state(new_state : int) -> void:
 
 func _physics_process(delta: float) -> void:
 	Global.updatePos(player, position, velocity)
-	match state:
-		States.IDLE:
-			pass
-		States.RUNNING:
-			pass
-		States.JUMPING:
-			pass
-		States.FALLING:
-			pass
 	
 	var target_dir = Vector3.ZERO
 	if Input.is_action_pressed(player + "right"):
@@ -41,13 +33,18 @@ func _physics_process(delta: float) -> void:
 	# Smoothly interpolate horizontal movement direction
 	var direction : Vector3 = lerp(velocity.normalized(), target_dir, lerp_speed * 0.9)
 	if (direction.length() <= 0.4):
+		model.idle()
 		direction = Vector3.ZERO
+	else:
+		model.run()
+	model.look_at(model.global_position + target_dir, Vector3.UP)
 	# Apply movement
 	velocity.x = direction.x * SPEED * delta
 	velocity.z = direction.z * SPEED * delta
 
 	# Add the gravity.
 	if not is_on_floor():
+		model.fall()
 		velocity += get_gravity() * delta
 
 	# Handle jump.

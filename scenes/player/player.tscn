@@ -4,13 +4,8 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8afob"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_8afob"]
-
 [node name="Player" type="CharacterBody3D" unique_id=1168755736]
 script = ExtResource("1_8afob")
 
 [node name="CollisionShape2D" type="CollisionShape3D" parent="." unique_id=2112383558]
 shape = SubResource("CapsuleShape3D_8afob")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1120243628]
-mesh = SubResource("CapsuleMesh_8afob")
