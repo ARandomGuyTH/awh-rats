@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c6lvkyywc7ven"]
+
+[ext_resource type="Script" uid="uid://dakl1dkek0sap" path="res://scenes/menus/level-select/level_select_button.gd" id="1_ohhy4"]
+
+[node name="LevelSelectButton" type="Button" unique_id=788538715]
+custom_minimum_size = Vector2(150, 150)
+theme_override_font_sizes/font_size = 90
+script = ExtResource("1_ohhy4")

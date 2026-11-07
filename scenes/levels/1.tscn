@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dfpqqi4427h3m"]
+
+[ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="1_ie7v7"]
+
+[node name="1" type="Node3D" unique_id=1546260991]
+script = ExtResource("1_ie7v7")
+metadata/_custom_type_script = "uid://mch6ywhqvbxs"

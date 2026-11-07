@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cqnb2xrxalaar"]
+
+[ext_resource type="PackedScene" uid="uid://chktex1tqh27c" path="res://assets/mouse1.glb" id="1_t07lv"]
+[ext_resource type="Script" uid="uid://cxuto6dmvex6t" path="res://scenes/player/mouse_1.gd" id="2_0eaj5"]
+
+[node name="mouse1" unique_id=848837630 instance=ExtResource("1_t07lv")]
+script = ExtResource("2_0eaj5")
