@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://cqs6fq0y2kcux"]
+
+[ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="1_jbqir"]
+[ext_resource type="PackedScene" uid="uid://bujf0ilydvabd" path="res://scenes/reversable/box/Box.tscn" id="2_yautc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gpje5"]
+size = Vector3(54, 1, 18.036377)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gpje5"]
+size = Vector3(53.932785, 0.90792084, 18.149658)
+
+[node name="TestLevel" type="Node3D" unique_id=305942642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1530457, 0)
+script = ExtResource("1_jbqir")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=260052886]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=812854755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.262695, -1.6668723, -2.0259705)
+shape = SubResource("BoxShape3D_gpje5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1583885065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.139389, -1.6735373, -2.2446508)
+mesh = SubResource("BoxMesh_gpje5")
+
+[node name="Box" parent="." unique_id=836615581 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 8.894363, 2.650877, 0)
+
+[node name="Box2" parent="." unique_id=934783343 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 14.921829, 8.605099, 0)
+
+[node name="Box3" parent="." unique_id=985698189 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 9.433975, 14.182159, 0)
+
+[node name="Box4" parent="." unique_id=2059072741 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 29.605804, 5.09058, 0)
+
+[node name="Box5" parent="." unique_id=1055365475 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 21.079567, 10.706207, 0)
+
+[node name="Box6" parent="." unique_id=579744806 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 8.894363, 2.650877, 0)
+
+[node name="Box7" parent="." unique_id=526058071 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 14.921829, 8.605099, 0)
+
+[node name="Box8" parent="." unique_id=550619809 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 9.433975, 14.182159, 0)
+
+[node name="Box9" parent="." unique_id=374655649 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 29.605804, 5.09058, 0)
+
+[node name="Box10" parent="." unique_id=1925938180 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 21.079567, 10.706207, 0)
+
+[node name="Box11" parent="." unique_id=2089052974 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -16.523956, 2.650877, 0)
+
+[node name="Box12" parent="." unique_id=1345829154 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -10.4964905, 8.605099, 0)
+
+[node name="Box13" parent="." unique_id=1819786169 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -15.9843445, 14.182159, 0)
+
+[node name="Box14" parent="." unique_id=1118198463 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4.1874847, 5.09058, 0)
+
+[node name="Box15" parent="." unique_id=1765554662 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -4.3387527, 10.706207, 0)
+
+[node name="Box16" parent="." unique_id=2112635321 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -16.523956, 2.650877, 0)
+
+[node name="Box17" parent="." unique_id=1788042598 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -10.4964905, 8.605099, 0)
+
+[node name="Box18" parent="." unique_id=194668711 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -15.9843445, 14.182159, 0)
+
+[node name="Box19" parent="." unique_id=67858653 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4.1874847, 5.09058, 0)
+
+[node name="Box20" parent="." unique_id=1800694718 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -4.3387527, 10.706207, 0)
+
+[node name="Box21" parent="." unique_id=204652085 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 16.133957, 18.169676, 0)
+
+[node name="Box22" parent="." unique_id=1535828029 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 22.161423, 24.123898, 0)
+
+[node name="Box23" parent="." unique_id=1631743056 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 16.673569, 29.700958, 0)
+
+[node name="Box24" parent="." unique_id=861407705 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 36.845398, 20.609379, 0)
+
+[node name="Box25" parent="." unique_id=1431342520 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 28.31916, 26.225006, 0)
+
+[node name="Box26" parent="." unique_id=382337026 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 16.133957, 18.169676, 0)
+
+[node name="Box27" parent="." unique_id=1520098212 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 22.161423, 24.123898, 0)
+
+[node name="Box28" parent="." unique_id=553197915 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 16.673569, 29.700958, 0)
+
+[node name="Box29" parent="." unique_id=641529471 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 36.845398, 20.609379, 0)
+
+[node name="Box30" parent="." unique_id=1010742022 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 28.31916, 26.225006, 0)
+
+[node name="Box31" parent="." unique_id=453286772 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -5.3374023, 21.778683, 0)
+
+[node name="Box32" parent="." unique_id=609498661 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -10.825256, 27.355743, 0)
+
+[node name="Box33" parent="." unique_id=1101014464 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.8203354, 23.879791, 0)
+
+[node name="Box34" parent="." unique_id=550484031 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -5.3374023, 21.778683, 0)
+
+[node name="Box35" parent="." unique_id=543708877 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -10.825256, 27.355743, 0)
+
+[node name="Box36" parent="." unique_id=510236897 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.8203354, 23.879791, 0)
+
+[node name="Box37" parent="." unique_id=1587443935 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.855667, 34.206417, 0)
+
+[node name="Box38" parent="." unique_id=2129810686 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.6321869, 39.783478, 0)
+
+[node name="Box39" parent="." unique_id=1385673388 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 10.013405, 36.307526, 0)
+
+[node name="Box40" parent="." unique_id=747931180 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.855667, 34.206417, 0)
+
+[node name="Box41" parent="." unique_id=159825810 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.6321869, 39.783478, 0)
+
+[node name="Box42" parent="." unique_id=763262910 instance=ExtResource("2_yautc")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 10.013405, 36.307526, 0)

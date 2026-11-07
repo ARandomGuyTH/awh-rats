@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ce0hxjdrfcrki"]
+
+[ext_resource type="Script" uid="uid://0t3wcvs11fnh" path="res://scenes/main/GameController.gd" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://b4pu5r0jr811y" path="res://scenes/player/player.tscn" id="2_iuonh"]
+[ext_resource type="Script" uid="uid://din41qm72vdjw" path="res://scenes/main/world.gd" id="2_k2fmo"]
+[ext_resource type="Script" uid="uid://bjqbg0kgrwk8d" path="res://scenes/main/camera.gd" id="3_l3cfh"]
+[ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="5_6q06x"]
+
+[node name="GameController" type="CanvasLayer" unique_id=293849601 node_paths=PackedStringArray("world", "UI")]
+script = ExtResource("1_hyk8p")
+world = NodePath("World")
+UI = NodePath("UI")
+
+[node name="World" type="Node3D" parent="." unique_id=1652061083]
+script = ExtResource("2_k2fmo")
+
+[node name="Camera" type="Camera3D" parent="World" unique_id=1954217512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 10)
+current = true
+script = ExtResource("3_l3cfh")
+
+[node name="Player1" parent="World" unique_id=103156709 instance=ExtResource("2_iuonh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+player = "player1"
+
+[node name="Player2" parent="World" unique_id=765914024 instance=ExtResource("2_iuonh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8952956, 1, 0)
+player = "player2"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" unique_id=567865195]
+transform = Transform3D(1, 0, 0, 0, 0.7086844, 0.70552564, 0, -0.70552564, 0.7086844, 0, 1, 6)
+script = ExtResource("5_6q06x")
+
+[node name="UI" type="Control" parent="." unique_id=1252852173]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true

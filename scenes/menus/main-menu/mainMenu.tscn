@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cywowws3m1mb1"]
+
+[ext_resource type="Script" uid="uid://bckl2ns33rp6o" path="res://scenes/menus/main-menu/main_menu.gd" id="1_4imu0"]
+
+[node name="MainMenu" type="Control" unique_id=874568146]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4imu0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1268311151]
+layout_mode = 1
+offset_left = -46.0
+offset_top = -77.5
+offset_right = 46.0
+offset_bottom = 77.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=196941202]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=2071592909]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "TIME GAME"
+
+[node name="StartButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1748663449]
+layout_mode = 2
+text = "Start
+"
+
+[node name="OptionsButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1829285163]
+layout_mode = 2
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=136403300]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer" unique_id=1153119577]
+layout_mode = 2
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
