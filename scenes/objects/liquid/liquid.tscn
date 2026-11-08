@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://df0xac0btqcog"]
+
+[ext_resource type="Shader" uid="uid://bxus3q85p3tky" path="res://scenes/objects/liquid/liquid.gdshader" id="1_jg3a5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ka1wb"]
+render_priority = 0
+shader = ExtResource("1_jg3a5")
+shader_parameter/out_color = Color(1, 0.98039216, 0.9647059, 1)
+shader_parameter/amount = 0.8
+shader_parameter/speed = 1.0
+shader_parameter/beer_factor = 0.2
+shader_parameter/metallic = 0.6
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.2
+
+[sub_resource type="QuadMesh" id="QuadMesh_q4x0g"]
+material = SubResource("ShaderMaterial_ka1wb")
+size = Vector2(100, 100)
+subdivide_width = 50
+subdivide_depth = 50
+
+[node name="Liquid" type="Node3D" unique_id=1779736340]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2098298173]
+mesh = SubResource("QuadMesh_q4x0g")

@@ -1,6 +1,6 @@
 extends Camera3D
 
-var startpos : Vector3 = Vector3.ZERO
+var startpos : Vector3
 
 @export var position_smooth_speed: float = 5.0
 @export var zoom_smooth_speed: float = 1.0
@@ -12,13 +12,12 @@ func reset() -> void:
 func _ready() -> void:
 	startpos = position
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	var centre = (Global.player1pos + Global.player2pos) / 2
 	var target = Vector3(centre.x, centre.y, startpos.z)
-	if target.y < 0:
-		target.y = 0
+	if target.y < 2:
+		target.y = 2
 	position = lerp(position, target, position_smooth_speed*delta)
 	
 	var target_zoom = absf((Global.player1pos - Global.player2pos).length()) * 5

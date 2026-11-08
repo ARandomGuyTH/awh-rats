@@ -17,7 +17,7 @@ UI = NodePath("UI")
 script = ExtResource("2_k2fmo")
 
 [node name="Camera" type="Camera3D" parent="World" unique_id=1954217512]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 10)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 10)
 current = true
 script = ExtResource("3_l3cfh")
 

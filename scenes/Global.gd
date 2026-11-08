@@ -32,3 +32,6 @@ func _process(delta: float) -> void:
 		t += (player1vel.x+player2vel.x) * delta
 	
 	t = max(t, 0.0)
+	
+	if Input.is_action_pressed("unlockLevels"):
+		maxLevel = 10
