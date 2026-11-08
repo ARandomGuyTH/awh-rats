@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://cywowws3m1mb1"]
 
 [ext_resource type="Script" uid="uid://bckl2ns33rp6o" path="res://scenes/menus/main-menu/main_menu.gd" id="1_4imu0"]
+[ext_resource type="Texture2D" uid="uid://cj17emrlwkskl" path="res://assets/main_title/mm_bg.png" id="2_np0xt"]
+[ext_resource type="Texture2D" uid="uid://ccf3kpkvfxcyb" path="res://assets/main_title/mm_title.png" id="3_wowv0"]
+[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="4_7h1w6"]
 
 [node name="MainMenu" type="Control" unique_id=874568146]
 layout_mode = 3
@@ -13,42 +16,45 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4imu0")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1268311151]
-layout_mode = 1
+[node name="MmBg" type="Sprite2D" parent="." unique_id=148655546]
+position = Vector2(-28, -40)
+texture = ExtResource("2_np0xt")
+
+[node name="MmTitle" type="Sprite2D" parent="." unique_id=2088456834]
+position = Vector2(38, -206)
+scale = Vector2(0.63055557, 0.47314814)
+texture = ExtResource("3_wowv0")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1153119577]
+layout_mode = 0
 offset_left = -46.0
 offset_top = -77.5
-offset_right = 46.0
+offset_right = -46.0
 offset_bottom = 77.5
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(2, 2)
-metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=196941202]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=196941202]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=2071592909]
-custom_minimum_size = Vector2(0, 50)
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1966095528]
 layout_mode = 2
-text = "TIME GAME"
 
-[node name="StartButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1748663449]
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1748663449]
 layout_mode = 2
 text = "Start
 "
 
-[node name="OptionsButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1829285163]
+[node name="OptionsButton" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1829285163]
 layout_mode = 2
 text = "Options"
 
-[node name="QuitButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=136403300]
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=136403300]
 layout_mode = 2
 text = "Quit
 "
 
-[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer" unique_id=1153119577]
-layout_mode = 2
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=192420082]
+stream = ExtResource("4_7h1w6")
 
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/QuitButton" to="." method="_on_quit_button_pressed"]

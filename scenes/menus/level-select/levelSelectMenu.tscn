@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://j1fniitd8tks"]
 
 [ext_resource type="PackedScene" uid="uid://c6lvkyywc7ven" path="res://scenes/menus/level-select/levelSelectButton.tscn" id="1_6h8r3"]
+[ext_resource type="Script" uid="uid://dinxh11m7lkbx" path="res://scenes/menus/level-select/level_select_menu.gd" id="1_m4kip"]
 
 [node name="LevelSelectMenu" type="Control" unique_id=2061396682]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_m4kip")
 metadata/_edit_use_anchors_ = true
 
 [node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=728966239]
@@ -71,3 +73,8 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Node" type="Node" parent="HBoxContainer/CenterContainer" unique_id=572200430]
+
+[node name="BackButton" type="Button" parent="HBoxContainer" unique_id=1514499619]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back to menu"

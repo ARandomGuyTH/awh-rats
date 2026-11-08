@@ -2,7 +2,7 @@ extends Control
 ## Attach to the root Control of options_menu.tscn.
 ## Every node below needs "Access as Unique Name" (%) ticked in the Scene dock.
 
-const MAIN_MENU_PATH := "res://scenes/menus/main-menu/mainMenu.tscn"  # CHANGE: right-click scene -> Copy Path
+const MAIN_MENU_PATH := "res://scenes/menus/main-menu/mainMenu.tscn"
 const FPS_VALUES := [30, 60, 120, 0]  # same order as FpsOption items (0 = uncapped)
 
 # Names shown on the rebind buttons' labels
