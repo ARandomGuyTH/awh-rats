@@ -163,3 +163,4 @@ light_energy = 0.7
 script = ExtResource("1_jbqir")
 
 [editable path="Node3D"]
+[editable path="Box3"]

@@ -12,9 +12,13 @@ func reset() -> void:
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	startpos = position
+	if floorRay == null:
+		push_error("Reversable '%s': missing child RayCast3D named 'floorRay'" % name)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
+	if floorRay == null:
+		return
 	if !floorRay.is_colliding():
 		position = Global.t*direction+startpos
 		floort = Global.t
