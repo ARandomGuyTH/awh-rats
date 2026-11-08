@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://criult7mdqrk2"
-path.s3tc="res://.godot/imported/Box_box.png-1c98ee0cb45733eb050c671850c3e231.s3tc.ctex"
+uid="uid://bxe7ynm27aeki"
+path.s3tc="res://.godot/imported/door_door.png-b4c625b0b9fc21d3120b8b95dee4160d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "120fe2c0170056a6616b1bffce6b1057"
+"md5": "b21b40dd70a6e1b94efb445a67ed6298"
 }
 
 [deps]
 
-source_file="res://assets/Box_box.png"
-dest_files=["res://.godot/imported/Box_box.png-1c98ee0cb45733eb050c671850c3e231.s3tc.ctex"]
+source_file="res://assets/level_assets/door_door.png"
+dest_files=["res://.godot/imported/door_door.png-b4c625b0b9fc21d3120b8b95dee4160d.s3tc.ctex"]
 
 [params]
 

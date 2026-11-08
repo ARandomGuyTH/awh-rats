@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3vd7k0iuaui3"
-path.s3tc="res://.godot/imported/moues2_mouse2.png-1afbe5d261448179e8bf312760915bd8.s3tc.ctex"
+uid="uid://bka7aw6ytpmup"
+path.s3tc="res://.godot/imported/cleaver_s-l1200.jpg-2f16283b20af992b525f21fb0abd55af.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "f14151918f431b74ce1b42e494eb0f62"
+"md5": "faa118176f7bcfc94ae46288f418b42c"
 }
 
 [deps]
 
-source_file="res://assets/moues2_mouse2.png"
-dest_files=["res://.godot/imported/moues2_mouse2.png-1afbe5d261448179e8bf312760915bd8.s3tc.ctex"]
+source_file="res://assets/level_assets/cleaver_s-l1200.jpg"
+dest_files=["res://.godot/imported/cleaver_s-l1200.jpg-2f16283b20af992b525f21fb0abd55af.s3tc.ctex"]
 
 [params]
 

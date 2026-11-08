@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbf81cq4ehnpg"
-path.s3tc="res://.godot/imported/milk_milk.png-27ed2bf573657e03790e6f6ac8b27ebf.s3tc.ctex"
+uid="uid://c3vd7k0iuaui3"
+path.s3tc="res://.godot/imported/moues2_mouse2.png-3a4aba4e711e3ab285032dea58731442.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "f67f1aa67666c09c4ef8f68dd9f0ff06"
+"md5": "f14151918f431b74ce1b42e494eb0f62"
 }
 
 [deps]
 
-source_file="res://assets/milk_milk.png"
-dest_files=["res://.godot/imported/milk_milk.png-27ed2bf573657e03790e6f6ac8b27ebf.s3tc.ctex"]
+source_file="res://assets/level_assets/moues2_mouse2.png"
+dest_files=["res://.godot/imported/moues2_mouse2.png-3a4aba4e711e3ab285032dea58731442.s3tc.ctex"]
 
 [params]
 

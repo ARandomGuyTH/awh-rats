@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://bkxahkpprfyoc"]
 
 [ext_resource type="PackedScene" uid="uid://d8y1o4nmtvi7" path="res://scenes/objects/brickWall.tscn" id="1_8jtne"]
-[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/door.glb" id="2_mp0kl"]
+[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/level_assets/door.glb" id="2_mp0kl"]
 [ext_resource type="PackedScene" uid="uid://vfc1wgkuxwsx" path="res://scenes/door/door.tscn" id="3_souht"]
 [ext_resource type="Texture2D" uid="uid://dsn1xynfek0tm" path="res://assets/textures/basementWall.PNG" id="4_wk5vn"]
 [ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="5_kt1qv"]
 [ext_resource type="PackedScene" uid="uid://bujf0ilydvabd" path="res://scenes/reversable/box/Box.tscn" id="6_mp0kl"]
-[ext_resource type="PackedScene" uid="uid://c0ecoovn4leqs" path="res://assets/plank.glb" id="7_souht"]
+[ext_resource type="PackedScene" uid="uid://c0ecoovn4leqs" path="res://assets/level_assets/plank.glb" id="7_souht"]
 [ext_resource type="Script" uid="uid://nnar74scn0hr" path="res://scenes/levels/plank.gd" id="7_wk5vn"]
+[ext_resource type="PackedScene" uid="uid://dgc4nl0ivdgia" path="res://scenes/menus/pause-menu/pauseMenu.tscn" id="9_kt1qv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fnalb"]
 size = Vector3(55.526367, 1, 18.036377)
@@ -171,5 +172,7 @@ mesh = SubResource("BoxMesh_nd2uj")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D" unique_id=1603581546]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04135132, 0.018127441, -0.07531738)
 shape = SubResource("BoxShape3D_2yp5e")
+
+[node name="PauseMenu" parent="." unique_id=483844966 instance=ExtResource("9_kt1qv")]
 
 [editable path="Node3D"]

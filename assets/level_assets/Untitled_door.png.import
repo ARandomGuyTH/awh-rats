@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://va2qppiecacd"
-path.s3tc="res://.godot/imported/plank_plank.png-3d3d80f56361d57e4ea7d5ed90c78ca4.s3tc.ctex"
+uid="uid://vy4twv6fkmb5"
+path.s3tc="res://.godot/imported/Untitled_door.png-3a5cdd33cd82aa7353373c6867d72387.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "3e779797da3f8763c87cf220da5ef988"
+"md5": "b21b40dd70a6e1b94efb445a67ed6298"
 }
 
 [deps]
 
-source_file="res://assets/plank_plank.png"
-dest_files=["res://.godot/imported/plank_plank.png-3d3d80f56361d57e4ea7d5ed90c78ca4.s3tc.ctex"]
+source_file="res://assets/level_assets/Untitled_door.png"
+dest_files=["res://.godot/imported/Untitled_door.png-3a5cdd33cd82aa7353373c6867d72387.s3tc.ctex"]
 
 [params]
 

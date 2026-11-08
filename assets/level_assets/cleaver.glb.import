@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://fjji0brmiiv6"
-path="res://.godot/imported/spatula.glb-16430f212839fa82a821599e15837dbf.scn"
+uid="uid://dl4iwyjc726kk"
+path="res://.godot/imported/cleaver.glb-338c0bb0b4ba276b85eafc40b0fc75e7.scn"
 
 [deps]
 
-source_file="res://assets/spatula.glb"
-dest_files=["res://.godot/imported/spatula.glb-16430f212839fa82a821599e15837dbf.scn"]
+source_file="res://assets/level_assets/cleaver.glb"
+dest_files=["res://.godot/imported/cleaver.glb-338c0bb0b4ba276b85eafc40b0fc75e7.scn"]
 
 [params]
 

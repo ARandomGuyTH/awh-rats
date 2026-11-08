@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bka7aw6ytpmup"
-path.s3tc="res://.godot/imported/cleaver_s-l1200.jpg-64a5abbbc43d308e886b3e31422cabe6.s3tc.ctex"
+uid="uid://dbf81cq4ehnpg"
+path.s3tc="res://.godot/imported/milk_milk.png-13de4808a6ecb49f1ac9cf8eb9623627.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "faa118176f7bcfc94ae46288f418b42c"
+"md5": "f67f1aa67666c09c4ef8f68dd9f0ff06"
 }
 
 [deps]
 
-source_file="res://assets/cleaver_s-l1200.jpg"
-dest_files=["res://.godot/imported/cleaver_s-l1200.jpg-64a5abbbc43d308e886b3e31422cabe6.s3tc.ctex"]
+source_file="res://assets/level_assets/milk_milk.png"
+dest_files=["res://.godot/imported/milk_milk.png-13de4808a6ecb49f1ac9cf8eb9623627.s3tc.ctex"]
 
 [params]
 

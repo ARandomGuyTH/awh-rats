@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ctbb5sa0nc3h2"
-path="res://.godot/imported/Box.glb-2a0412df3df60b08ea227ca14ce6a4c2.scn"
+uid="uid://begfkav5a8rv7"
+path="res://.godot/imported/moues2.glb-2937d5500751e3d38ac5d412e1f75a05.scn"
 
 [deps]
 
-source_file="res://assets/Box.glb"
-dest_files=["res://.godot/imported/Box.glb-2a0412df3df60b08ea227ca14ce6a4c2.scn"]
+source_file="res://assets/level_assets/moues2.glb"
+dest_files=["res://.godot/imported/moues2.glb-2937d5500751e3d38ac5d412e1f75a05.scn"]
 
 [params]
 

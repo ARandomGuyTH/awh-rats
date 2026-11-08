@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dopf3dxqcttvl"
-path.s3tc="res://.godot/imported/bed_bed.png-2057318eaf3c780e9f06425c95c2e47f.s3tc.ctex"
+uid="uid://bb8uj4kvcqpnv"
+path.s3tc="res://.godot/imported/left-plank_plank.png-2c45e1ffeadbc7aaa3460d19f3974ae5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "29a804171c4bfe462711e8f7f74eba38"
+"md5": "3e779797da3f8763c87cf220da5ef988"
 }
 
 [deps]
 
-source_file="res://assets/bed_bed.png"
-dest_files=["res://.godot/imported/bed_bed.png-2057318eaf3c780e9f06425c95c2e47f.s3tc.ctex"]
+source_file="res://assets/level_assets/left-plank_plank.png"
+dest_files=["res://.godot/imported/left-plank_plank.png-2c45e1ffeadbc7aaa3460d19f3974ae5.s3tc.ctex"]
 
 [params]
 

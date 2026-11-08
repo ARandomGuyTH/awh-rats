@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dfpqqi4427h3m"]
 
 [ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="1_ie7v7"]
-[ext_resource type="PackedScene" uid="uid://0xbu6y21e1mr" path="res://assets/bed.glb" id="2_f00r8"]
+[ext_resource type="PackedScene" uid="uid://0xbu6y21e1mr" path="res://assets/level_assets/bed.glb" id="2_f00r8"]
 [ext_resource type="PackedScene" uid="uid://d8y1o4nmtvi7" path="res://scenes/objects/brickWall.tscn" id="2_le1x0"]
 [ext_resource type="Texture2D" uid="uid://dsn1xynfek0tm" path="res://assets/textures/basementWall.PNG" id="3_x3ltn"]
-[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/door.glb" id="4_0absb"]
+[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/level_assets/door.glb" id="4_0absb"]
 [ext_resource type="PackedScene" uid="uid://vfc1wgkuxwsx" path="res://scenes/door/door.tscn" id="5_4o7q8"]
 [ext_resource type="PackedScene" uid="uid://dgc4nl0ivdgia" path="res://scenes/menus/pause-menu/pauseMenu.tscn" id="7_kpjit"]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bujf0ilydvabd"]
 
 [ext_resource type="Script" uid="uid://ceac6njpoia0x" path="res://scenes/reversable/reversable.gd" id="1_piv2q"]
-[ext_resource type="PackedScene" uid="uid://ctbb5sa0nc3h2" path="res://assets/Box.glb" id="2_01wbp"]
+[ext_resource type="PackedScene" uid="uid://ctbb5sa0nc3h2" path="res://assets/level_assets/Box.glb" id="2_01wbp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gpje5"]
 size = Vector3(4.1394043, 4.134552, 4.161743)

@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://bjqbg0kgrwk8d" path="res://scenes/main/camera.gd" id="3_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://cqnb2xrxalaar" path="res://scenes/player/mouse_1.tscn" id="5_ow5a4"]
 [ext_resource type="Script" uid="uid://cxuto6dmvex6t" path="res://scenes/player/mouse_1.gd" id="6_hujxm"]
-[ext_resource type="PackedScene" uid="uid://begfkav5a8rv7" path="res://assets/moues2.glb" id="6_ow5a4"]
+[ext_resource type="PackedScene" uid="uid://begfkav5a8rv7" path="res://assets/level_assets/moues2.glb" id="6_ow5a4"]
 
 [node name="GameController" type="CanvasLayer" unique_id=293849601 node_paths=PackedStringArray("world", "UI")]
 script = ExtResource("1_hyk8p")

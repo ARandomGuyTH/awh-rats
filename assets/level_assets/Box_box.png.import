@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm7jvwt5gnhx0"
-path.s3tc="res://.godot/imported/mouse1_tex_mouse1.png-d31150495112392e0e3fa6966b1503af.s3tc.ctex"
+uid="uid://criult7mdqrk2"
+path.s3tc="res://.godot/imported/Box_box.png-ccb890bab7b66b78b754e02a02e2800b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "97c8492ea36f6566830de217c646079a"
+"md5": "120fe2c0170056a6616b1bffce6b1057"
 }
 
 [deps]
 
-source_file="res://assets/mouse1_tex_mouse1.png"
-dest_files=["res://.godot/imported/mouse1_tex_mouse1.png-d31150495112392e0e3fa6966b1503af.s3tc.ctex"]
+source_file="res://assets/level_assets/Box_box.png"
+dest_files=["res://.godot/imported/Box_box.png-ccb890bab7b66b78b754e02a02e2800b.s3tc.ctex"]
 
 [params]
 

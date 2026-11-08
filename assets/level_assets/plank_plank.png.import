@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b18ibu4acgp1i"
-path.s3tc="res://.godot/imported/spatula_spatula.png-11e6f956140f3e46e65e9b3c7c6799b7.s3tc.ctex"
+uid="uid://va2qppiecacd"
+path.s3tc="res://.godot/imported/plank_plank.png-7661ab6933891fef49dca408d4f4a415.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "ebd0bc40413375b303de38236a648b97"
+"md5": "3e779797da3f8763c87cf220da5ef988"
 }
 
 [deps]
 
-source_file="res://assets/spatula_spatula.png"
-dest_files=["res://.godot/imported/spatula_spatula.png-11e6f956140f3e46e65e9b3c7c6799b7.s3tc.ctex"]
+source_file="res://assets/level_assets/plank_plank.png"
+dest_files=["res://.godot/imported/plank_plank.png-7661ab6933891fef49dca408d4f4a415.s3tc.ctex"]
 
 [params]
 

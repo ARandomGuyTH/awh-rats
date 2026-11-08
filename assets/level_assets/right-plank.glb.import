@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://chktex1tqh27c"
-path="res://.godot/imported/mouse1.glb-5b6ab8bb7615278b9c7a88e0822adfab.scn"
+uid="uid://h150hw6xdhw"
+path="res://.godot/imported/right-plank.glb-c8881577c28d1b5a17dcd2aecc61960a.scn"
 
 [deps]
 
-source_file="res://assets/mouse1.glb"
-dest_files=["res://.godot/imported/mouse1.glb-5b6ab8bb7615278b9c7a88e0822adfab.scn"]
+source_file="res://assets/level_assets/right-plank.glb"
+dest_files=["res://.godot/imported/right-plank.glb-c8881577c28d1b5a17dcd2aecc61960a.scn"]
 
 [params]
 

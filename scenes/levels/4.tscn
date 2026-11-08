@@ -2,15 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://d8y1o4nmtvi7" path="res://scenes/objects/brickWall.tscn" id="2_2n3hm"]
 [ext_resource type="Texture2D" uid="uid://clpvblmdd1bqs" path="res://assets/textures/kitchenWall.png" id="2_cddsv"]
-[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/door.glb" id="3_s5tjy"]
+[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/level_assets/door.glb" id="3_s5tjy"]
 [ext_resource type="PackedScene" uid="uid://vfc1wgkuxwsx" path="res://scenes/door/door.tscn" id="4_si25r"]
 [ext_resource type="Shader" uid="uid://bxus3q85p3tky" path="res://scenes/objects/liquid/liquid.gdshader" id="6_2n3hm"]
-[ext_resource type="PackedScene" uid="uid://tfxa3ftluniq" path="res://assets/milk.glb" id="6_sc0rx"]
+[ext_resource type="PackedScene" uid="uid://tfxa3ftluniq" path="res://assets/level_assets/milk.glb" id="6_sc0rx"]
 [ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="6_y87mq"]
 [ext_resource type="Script" uid="uid://dwkya1f0hrhiq" path="res://scenes/levels/liquid.gd" id="7_s5tjy"]
 [ext_resource type="Script" uid="uid://dyqlwkb55fwc" path="res://scenes/levels/collision_shape_3d.gd" id="8_si25r"]
-[ext_resource type="PackedScene" uid="uid://fjji0brmiiv6" path="res://assets/spatula.glb" id="10_bg5fu"]
-[ext_resource type="Script" uid="uid://ct265o3cu6iyf" path="res://assets/spatula.gd" id="11_y87mq"]
+[ext_resource type="PackedScene" uid="uid://fjji0brmiiv6" path="res://assets/level_assets/spatula.glb" id="10_bg5fu"]
+[ext_resource type="Script" uid="uid://ct265o3cu6iyf" path="res://assets/level_assets/spatula.gd" id="11_y87mq"]
+[ext_resource type="PackedScene" uid="uid://dgc4nl0ivdgia" path="res://scenes/menus/pause-menu/pauseMenu.tscn" id="12_033ma"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ki155"]
 size = Vector3(54, 1, 29.184326)
@@ -159,6 +160,8 @@ script = ExtResource("11_y87mq")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="spatula/Area3D" unique_id=137222654]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8092043, 14.899801)
 shape = SubResource("BoxShape3D_gpje5")
+
+[node name="PauseMenu" parent="." unique_id=483844966 instance=ExtResource("12_033ma")]
 
 [connection signal="body_entered" from="spatula/Area3D" to="Node3D/StaticBody3D/MILKCOLLISION" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="spatula/Area3D" to="spatula" method="_on_area_3d_body_entered"]

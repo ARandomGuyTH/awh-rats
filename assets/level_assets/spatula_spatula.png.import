@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vy4twv6fkmb5"
-path.s3tc="res://.godot/imported/Untitled_door.png-6806dc51ab1e38a166be3b562f70c0e7.s3tc.ctex"
+uid="uid://b18ibu4acgp1i"
+path.s3tc="res://.godot/imported/spatula_spatula.png-192b167b99bb37e6dd156df11b86a907.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "b21b40dd70a6e1b94efb445a67ed6298"
+"md5": "ebd0bc40413375b303de38236a648b97"
 }
 
 [deps]
 
-source_file="res://assets/Untitled_door.png"
-dest_files=["res://.godot/imported/Untitled_door.png-6806dc51ab1e38a166be3b562f70c0e7.s3tc.ctex"]
+source_file="res://assets/level_assets/spatula_spatula.png"
+dest_files=["res://.godot/imported/spatula_spatula.png-192b167b99bb37e6dd156df11b86a907.s3tc.ctex"]
 
 [params]
 
