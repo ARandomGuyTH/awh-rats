@@ -1,0 +1,16 @@
+extends Button
+
+const MAIN_MENU_PATH := "res://scenes/main/main.tscn"
+
+@onready var back_button: Button = %BackButton
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	back_button.pressed.connect(_on_back_pressed)
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file(MAIN_MENU_PATH)

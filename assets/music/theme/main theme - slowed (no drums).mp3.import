@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yn7bbfs73ods"
+path="res://.godot/imported/main theme - slowed (no drums).mp3-1c7f404c3b8fd4a5fae610d82d6e75bc.mp3str"
+
+[deps]
+
+source_file="res://assets/music/theme/main theme - slowed (no drums).mp3"
+dest_files=["res://.godot/imported/main theme - slowed (no drums).mp3-1c7f404c3b8fd4a5fae610d82d6e75bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
