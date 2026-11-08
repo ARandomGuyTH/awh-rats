@@ -1,7 +1,7 @@
 class_name Resettable extends Node3D
 
 var startpos : Vector3 = Vector3.ZERO
-
+#sonion
 func reset() -> void:
 	position = startpos
 
