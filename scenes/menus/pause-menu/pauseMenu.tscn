@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dgc4nl0ivdgia"]
 
 [ext_resource type="Script" uid="uid://bxx4kqw17ssw3" path="res://scenes/menus/pause-menu/pause_menu.gd" id="1_oxpnx"]
-[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="2_221lb"]
 
 [node name="PauseMenu" type="Control" unique_id=483844966]
 layout_mode = 3
@@ -71,7 +70,3 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Main Menu
 "
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1364523375]
-stream = ExtResource("2_221lb")
-autoplay = true

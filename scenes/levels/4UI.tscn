@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://cl1j0jwjb3w3k"]
 
-[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="1_d1nky"]
-
 [node name="3ui" type="Control" unique_id=1070986372]
 layout_mode = 3
 anchors_preset = 15
@@ -9,7 +7,3 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1152944725]
-stream = ExtResource("1_d1nky")
-autoplay = true

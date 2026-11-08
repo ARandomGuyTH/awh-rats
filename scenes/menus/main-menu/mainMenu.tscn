@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://bckl2ns33rp6o" path="res://scenes/menus/main-menu/main_menu.gd" id="1_4imu0"]
 [ext_resource type="Texture2D" uid="uid://cj17emrlwkskl" path="res://assets/main_title/mm_bg.png" id="2_np0xt"]
 [ext_resource type="Texture2D" uid="uid://ccf3kpkvfxcyb" path="res://assets/main_title/mm_title.png" id="3_wowv0"]
-[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="4_7h1w6"]
 
 [node name="MainMenu" type="Control" unique_id=874568146]
 layout_mode = 3
@@ -60,10 +59,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Quit
 "
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=192420082]
-stream = ExtResource("4_7h1w6")
-autoplay = true
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/StartButton" to="." method="_on_start_button_pressed"]

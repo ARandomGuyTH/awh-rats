@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://c6lvkyywc7ven" path="res://scenes/menus/level-select/levelSelectButton.tscn" id="1_6h8r3"]
 [ext_resource type="Script" uid="uid://dinxh11m7lkbx" path="res://scenes/menus/level-select/level_select_menu.gd" id="1_m4kip"]
-[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="3_015fg"]
 
 [node name="LevelSelectMenu" type="Control" unique_id=2061396682]
 layout_mode = 3
@@ -84,7 +83,3 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Back to menu"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=765326092]
-stream = ExtResource("3_015fg")
-autoplay = true

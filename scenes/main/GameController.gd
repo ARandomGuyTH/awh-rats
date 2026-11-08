@@ -34,5 +34,6 @@ func change_world_scene(new_scene : String, delete : bool=true, keep_running=fal
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.game_controller = self
+	Music.play_track(preload("res://assets/music/theme/time1.mp3"))
 	change_ui_scene("res://scenes/menus/main-menu/mainMenu.tscn")
 	change_world_scene("res://scenes/levels/test_level.tscn")
