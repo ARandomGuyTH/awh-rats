@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dsn1xynfek0tm" path="res://assets/textures/basementWall.PNG" id="3_x3ltn"]
 [ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/door.glb" id="4_0absb"]
 [ext_resource type="PackedScene" uid="uid://vfc1wgkuxwsx" path="res://scenes/door/door.tscn" id="5_4o7q8"]
+[ext_resource type="PackedScene" uid="uid://dgc4nl0ivdgia" path="res://scenes/menus/pause-menu/pauseMenu.tscn" id="7_kpjit"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x3ltn"]
 size = Vector3(54, 1, 18.036377)
@@ -107,5 +108,7 @@ omni_attenuation = 0.5
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D4" unique_id=1508255439]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.69755, -0.47467518, 1.4908752)
 shape = SubResource("BoxShape3D_f00r8")
+
+[node name="PauseMenu" parent="." unique_id=483844966 instance=ExtResource("7_kpjit")]
 
 [editable path="Node3D"]

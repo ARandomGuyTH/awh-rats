@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bnwufe5nujq7c"]
 
 [ext_resource type="Script" uid="uid://pj6d1giehkco" path="res://scenes/menus/options-menu/options_menu.gd" id="1_la5jw"]
+[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="2_uvrhu"]
 
 [node name="OptionsMenu" type="Control" unique_id=1737398171]
 layout_mode = 3
@@ -18,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.21410304, 0.21410304, 0.21410301, 1)
+color = Color(0.7736536, 0.7512638, 0.79096353, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1206616029]
 layout_mode = 1
@@ -243,3 +244,7 @@ text = "Reset to defaults"
 unique_name_in_owner = true
 layout_mode = 2
 text = "Back to menu"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=693732283]
+stream = ExtResource("2_uvrhu")
+autoplay = true

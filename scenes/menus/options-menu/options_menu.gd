@@ -47,6 +47,7 @@ const ACTION_LABELS := {
 var _rebind_button: Button = null
 var _rebind_player := ""   # "p1_binds" / "p2_binds"
 var _rebind_action := ""
+var opened_as_overlay := false
 
 
 func _ready() -> void:
@@ -132,7 +133,7 @@ func _update_volume_labels() -> void:
 
 
 func _update_jump_label() -> void:
-	jump_label.text = "%.1fx" % jump_slider.value
+	jump_label.text = "Jump Assist: %.1fx" % jump_slider.value
 
 
 # ---------- Save / Back / Reset ----------
@@ -146,8 +147,10 @@ func _on_save_pressed() -> void:
 
 
 func _on_back_pressed() -> void:
-	Settings.save_settings()
-	Global.game_controller.change_ui_scene(MAIN_MENU_PATH)
+	if opened_as_overlay:
+		queue_free()   # pause menu reappears via its tree_exited handler
+	else:
+		Global.game_controller.change_ui_scene("res://scenes/menus/main-menu/mainMenu.tscn")
 
 
 func _on_reset_pressed() -> void:

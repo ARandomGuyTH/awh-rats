@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cceks7sax4ft7"]
 
+[ext_resource type="AudioStream" uid="uid://ckpwut8h1krqm" path="res://assets/music/theme/time1.mp3" id="1_8uwps"]
+
 [node name="2ui" type="Control" unique_id=1022110726]
 layout_mode = 3
 anchors_preset = 15
@@ -43,3 +45,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1237388155]
 layout_mode = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1316263034]
+stream = ExtResource("1_8uwps")
+autoplay = true
