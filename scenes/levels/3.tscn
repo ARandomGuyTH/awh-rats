@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://no3qxciyjxwy" path="res://assets/level_assets/left-plank.glb" id="7_souht"]
 [ext_resource type="Script" uid="uid://ceac6njpoia0x" path="res://scenes/reversable/reversable.gd" id="8_wk5vn"]
 [ext_resource type="PackedScene" uid="uid://dgc4nl0ivdgia" path="res://scenes/menus/pause-menu/pauseMenu.tscn" id="10_bg5fu"]
+[ext_resource type="Script" uid="uid://ci4ldqafdni1c" path="res://scenes/levels/area_3d.gd" id="11_y87mq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fnalb"]
 size = Vector3(24.498413, 1.9008827, 4.161743)
@@ -49,6 +50,9 @@ size = Vector3(2.661, 0.515, 3.099)
 
 [sub_resource type="BoxMesh" id="BoxMesh_68ra0"]
 size = Vector3(2.6609802, 0.51464844, 3.0987244)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gpje5"]
+size = Vector3(6.897461, 5.5893555, 9.320435)
 
 [node name="2" type="Node3D" unique_id=1546260991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09439087, -1.371521, 0)
@@ -174,6 +178,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.227474, 21.968163, 0.000122
 [node name="CollisionShape3D" type="CollisionShape3D" parent="background3/StaticBody3D" unique_id=1265943866]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.227474, 21.968163, 0.00012207031)
 shape = SubResource("ConcavePolygonShape3D_bg5fu")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1762134756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.425169, 3.519142, 0)
+script = ExtResource("11_y87mq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1514360954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9487305, 2.294678, 1.9805298)
+shape = SubResource("BoxShape3D_gpje5")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
 
 [editable path="Box"]
 [editable path="background"]

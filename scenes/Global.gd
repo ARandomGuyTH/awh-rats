@@ -1,5 +1,5 @@
 extends Node
-
+var banding : float = 1.0
 var game_controller : GameController
 var t : float = 0.0
 var maxLevel : int = 1
@@ -26,10 +26,13 @@ func updatePos(player : String, position : Vector3, velocity : Vector3):
 func _process(delta: float) -> void:
 	if player2vel.x > 0 and player1vel.x > 0:
 		t += max(player2vel.x, player1vel.x) * delta
-	elif player2vel.x < 0 and player1vel.x < 0:
-		t += min(player2vel.x, player1vel.x) * delta
+	elif player2vel.x <= 0 and player1vel.x <= 0:
+		t += min(player2vel.x, player1vel.x) * delta * banding
 	else:
-		t += (player1vel.x+player2vel.x) * delta
+		if player1vel.x+player2vel.x <= 0:
+			t += (player1vel.x+player2vel.x) * delta
+		else:
+			t += (player1vel.x+player2vel.x) * delta
 	
 	t = max(t, 0.0)
 	
