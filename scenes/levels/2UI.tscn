@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://cceks7sax4ft7"]
+[gd_scene format=3 uid="uid://cyit3lfblqdpm"]
 
-[node name="2ui" type="Control" unique_id=1022110726]
+[node name="2ui" type="Control" unique_id=1535246147]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -8,7 +8,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1448948270]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1649195096]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -22,24 +22,20 @@ offset_bottom = 263.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1299921649]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1569281458]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=654480629]
-layout_mode = 2
-theme_override_font_sizes/font_size = 70
-text = "Hint: Move together fast forwards "
-
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1823028147]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1146131433]
 custom_minimum_size = Vector2(0, 750)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 70
-text = "as much as moving individually"
+text = "move forward to travel forwards in time
+and backwards to travel backwards"
 metadata/_edit_use_anchors_ = true
 
-[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1237388155]
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=847866237]
 layout_mode = 2
