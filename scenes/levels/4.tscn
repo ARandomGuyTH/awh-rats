@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://tqwy0nb867sm"]
+
+[ext_resource type="PackedScene" uid="uid://d8y1o4nmtvi7" path="res://scenes/objects/brickWall.tscn" id="2_2n3hm"]
+[ext_resource type="Texture2D" uid="uid://clpvblmdd1bqs" path="res://assets/textures/kitchenWall.png" id="2_cddsv"]
+[ext_resource type="PackedScene" uid="uid://b3cibdaheq1i4" path="res://assets/door.glb" id="3_s5tjy"]
+[ext_resource type="PackedScene" uid="uid://vfc1wgkuxwsx" path="res://scenes/door/door.tscn" id="4_si25r"]
+[ext_resource type="Shader" uid="uid://bxus3q85p3tky" path="res://scenes/objects/liquid/liquid.gdshader" id="6_2n3hm"]
+[ext_resource type="PackedScene" uid="uid://tfxa3ftluniq" path="res://assets/milk.glb" id="6_sc0rx"]
+[ext_resource type="Script" uid="uid://mch6ywhqvbxs" path="res://scenes/main/resettable.gd" id="6_y87mq"]
+[ext_resource type="Script" uid="uid://dwkya1f0hrhiq" path="res://scenes/levels/liquid.gd" id="7_s5tjy"]
+[ext_resource type="Script" uid="uid://dyqlwkb55fwc" path="res://scenes/levels/collision_shape_3d.gd" id="8_si25r"]
+[ext_resource type="PackedScene" uid="uid://fjji0brmiiv6" path="res://assets/spatula.glb" id="10_bg5fu"]
+[ext_resource type="Script" uid="uid://ct265o3cu6iyf" path="res://assets/spatula.gd" id="11_y87mq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ki155"]
+size = Vector3(54, 1, 29.184326)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sc0rx"]
+albedo_texture = ExtResource("2_cddsv")
+uv1_scale = Vector3(0.3, 0.3, 0.3)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_2n3hm"]
+material = SubResource("StandardMaterial3D_sc0rx")
+size = Vector3(54.55304, 44.93634, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bg5fu"]
+size = Vector3(4.544, 5.956, 100)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s5tjy"]
+render_priority = 0
+shader = ExtResource("6_2n3hm")
+shader_parameter/out_color = Color(3.2944162, 3.2944162, 3.2944162, 1)
+shader_parameter/amount = 0.20000000298023
+shader_parameter/speed = 0.30000000447036
+shader_parameter/beer_factor = 0.2
+shader_parameter/metallic = 0.6
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.2
+
+[sub_resource type="PrismMesh" id="PrismMesh_gpje5"]
+material = SubResource("ShaderMaterial_s5tjy")
+subdivide_width = 3
+subdivide_depth = 3
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s5tjy"]
+size = Vector3(6.829109, 4.3291016, 3.1177979)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5bsmb"]
+size = Vector3(53.932785, 0.90792084, 30.07434)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f00r8"]
+albedo_texture = ExtResource("2_cddsv")
+uv1_scale = Vector3(0.3, 0.3, 0.3)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_xl53o"]
+material = SubResource("StandardMaterial3D_f00r8")
+size = Vector3(7.663086, 45.99144, 18.933838)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n2gcf"]
+size = Vector3(7.5705566, 28.337769, 7.8168945)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gpje5"]
+size = Vector3(10, 10, 42.151)
+
+[node name="3" type="Node3D" unique_id=1173311418]
+script = ExtResource("6_y87mq")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=1260766247]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=2119871847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.262695, -1.6668723, 3.5480042)
+shape = SubResource("BoxShape3D_ki155")
+
+[node name="Node3D" parent="." unique_id=53726933 instance=ExtResource("2_2n3hm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6651917, -0.9151764, -10.999791)
+
+[node name="MeshInstance3D" parent="Node3D" index="0" unique_id=41841136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2218323, 21.96817, 0)
+mesh = SubResource("BoxMesh_2n3hm")
+
+[node name="door" parent="Node3D" unique_id=21787361 instance=ExtResource("3_s5tjy")]
+transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, -2.9622803, -0.061775208, 0.5639086)
+
+[node name="Door" parent="Node3D" unique_id=653478079 instance=ExtResource("4_si25r")]
+transform = Transform3D(-0.59999996, 0, 9.059748e-08, 0, 0.59999996, 0, -9.059748e-08, 0, -0.59999996, 22.635838, 0.054283142, 1.1725512)
+level = 4
+
+[node name="CollisionShape3D" parent="Node3D/Door/Area3D" parent_id_path=PackedInt32Array(653478079, 1432142159) index="0" unique_id=1784959928]
+shape = SubResource("BoxShape3D_bg5fu")
+
+[node name="liquid" type="MeshInstance3D" parent="Node3D" unique_id=986615820]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 8.550034, -0.50678563, 6.8843994)
+mesh = SubResource("PrismMesh_gpje5")
+script = ExtResource("7_s5tjy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D" unique_id=219265545]
+
+[node name="MILKCOLLISION" type="CollisionShape3D" parent="Node3D/StaticBody3D" unique_id=2091917923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.403629, 1.6645508, 8.104553)
+shape = SubResource("BoxShape3D_s5tjy")
+script = ExtResource("8_si25r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1947479432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.139389, -1.6735373, 3.7176905)
+mesh = SubResource("BoxMesh_5bsmb")
+
+[node name="Node3D2" type="Node3D" parent="." unique_id=78085611]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D2" unique_id=895854180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.906403, 21.227173, -2.4244385)
+mesh = SubResource("BoxMesh_xl53o")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D2" unique_id=2006862663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.898, 21.47586, 1.3635025)
+mesh = SubResource("BoxMesh_xl53o")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=567524835]
+transform = Transform3D(0.71765536, -0.49132696, 0.49352673, 1.2581011e-08, 0.7086844, 0.70552564, -0.69639844, -0.50632423, 0.5085912, 0, 5.4546204, 6)
+light_energy = 0.7
+script = ExtResource("6_y87mq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="DirectionalLight3D" unique_id=170714902]
+transform = Transform3D(-0.94258296, -0.17376673, -0.28520688, -0.10446775, -0.6577209, 0.7459827, -0.31721342, 0.73294526, 0.60180354, 0, 1.0000002, 6.000001)
+light_energy = 0.7
+script = ExtResource("6_y87mq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1776654848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19554901, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=740802887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.503181, 12.231873, 3.4084473)
+shape = SubResource("BoxShape3D_n2gcf")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1233005870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.840141, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=577243750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6430626, 12.231873, 3.4084473)
+shape = SubResource("BoxShape3D_n2gcf")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1013347354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.688572, 4.125885, -5.88501)
+light_color = Color(1, 0.39215687, 0, 1)
+light_energy = 5.0
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="milk" parent="." unique_id=103828899 instance=ExtResource("6_sc0rx")]
+transform = Transform3D(-8.742278e-08, -8.742278e-08, -2, -2, 3.821371e-15, 8.742278e-08, 0, 2, -8.742278e-08, 11.28187, 0.7582753, -7.956665)
+
+[node name="spatula" parent="." unique_id=1174650828 instance=ExtResource("10_bg5fu")]
+transform = Transform3D(0.29999998, 1.7763568e-15, 0, -1.7763568e-15, 0.29999998, 0, 0, 0, 0.29999998, 19.100433, -0.9417372, 0.04724121)
+script = ExtResource("11_y87mq")
+
+[node name="Area3D" type="Area3D" parent="spatula" unique_id=1750058046]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="spatula/Area3D" unique_id=137222654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8092043, 14.899801)
+shape = SubResource("BoxShape3D_gpje5")
+
+[connection signal="body_entered" from="spatula/Area3D" to="Node3D/StaticBody3D/MILKCOLLISION" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="spatula/Area3D" to="spatula" method="_on_area_3d_body_entered"]
+
+[editable path="Node3D"]
+[editable path="Node3D/Door"]
