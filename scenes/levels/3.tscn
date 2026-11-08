@@ -14,7 +14,7 @@
 size = Vector3(24.498413, 1.9008827, 4.161743)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_favck"]
-size = Vector3(24.173502, 6.226, 10.918)
+size = Vector3(26.994953, 4.108117, 10.918)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f00r8"]
 albedo_texture = ExtResource("1_mpdjq")
@@ -23,7 +23,7 @@ uv1_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_0absb"]
 material = SubResource("StandardMaterial3D_f00r8")
-size = Vector3(24.370636, 6.2257004, 10.918457)
+size = Vector3(27.227798, 4.0748863, 10.918457)
 
 [sub_resource type="BoxMesh" id="BoxMesh_f00r8"]
 size = Vector3(53.932785, 0.90792084, 18.149658)
@@ -43,7 +43,7 @@ script = ExtResource("1_mp0kl")
 metadata/_custom_type_script = "uid://mch6ywhqvbxs"
 
 [node name="Box" parent="." unique_id=836615581 instance=ExtResource("2_kt1qv")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 18.581778, 5.1291428, -0.07294464)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 15.164265, 2.7347336, -0.07294464)
 
 [node name="Box" parent="Box" index="0" unique_id=151120224]
 visible = false
@@ -65,7 +65,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94688, 21.968163, 0.0001220
 transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, -2.9622803, -0.061775208, 0.5639086)
 
 [node name="Door" parent="background" unique_id=653478079 instance=ExtResource("5_fnalb")]
-transform = Transform3D(-0.6, 0, 9.059749e-08, 0, 0.6, 0, -9.059749e-08, 0, -0.6, 31.656792, 5.807167, 1.1725512)
+transform = Transform3D(-0.6, 0, 9.059749e-08, 0, 0.6, 0, -9.059749e-08, 0, -0.6, 31.656792, 3.8258514, 1.1725512)
 level = 4
 
 [node name="background2" parent="." unique_id=2094152846 instance=ExtResource("3_wk5vn")]
@@ -87,11 +87,11 @@ level = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.409637, 1.5929909, 1.3635025)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="raisedlevel/StaticBody3D" unique_id=812409821]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.255615, 9.179115e-06, 0.00049746037)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8448906, -1.0589322, 0.00049746037)
 shape = SubResource("BoxShape3D_favck")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="raisedlevel/StaticBody3D" unique_id=1212188702]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.353775, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.925194, -1.075407, 0)
 mesh = SubResource("BoxMesh_0absb")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1215596580]
@@ -124,13 +124,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.139, -1.674, -2.245)
 shape = SubResource("BoxShape3D_seth2")
 
 [node name="right plank" type="StaticBody3D" parent="." unique_id=2064777439]
-transform = Transform3D(0.026614573, 0, -0.9996458, 0, 1, 0, 0.9996458, 0, 0.026614573, 16.908669, 4.995877, -0.06653309)
+transform = Transform3D(0.026614573, 0, -0.9996458, 0, 1, 0, 0.9996458, 0, 0.026614573, 14.109255, 4.995877, -0.06653309)
 
 [node name="right-plank" parent="right plank" unique_id=1924545220 instance=ExtResource("6_mp0kl")]
-transform = Transform3D(1, 0, 1.8626451e-09, 0, 1, 0, -1.8626451e-09, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 3.7252903e-09, 0, 1, 0, -3.7252903e-09, 0, 1, 0, -2.274767, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="right plank" unique_id=1466265181]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028, -0.006, -3.895)
+transform = Transform3D(1, 0, 1.8626451e-09, 0, 1, 0, -1.8626451e-09, 0, 1, 0.027999997, -2.2093382, -3.8949986)
 shape = SubResource("BoxShape3D_txpwa")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="right plank" unique_id=363562818]
