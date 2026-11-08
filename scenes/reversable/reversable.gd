@@ -14,7 +14,7 @@ func _ready() -> void:
 	startpos = position
 	if floorRay == null:
 		push_error("Reversable '%s': missing child RayCast3D named 'floorRay'" % name)
-		Global.t = 5.0
+		Global.t = -5.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:

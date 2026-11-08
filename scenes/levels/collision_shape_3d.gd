@@ -3,7 +3,7 @@ var startpos : Vector3
 var spatula : bool = false
 func _physics_process(delta: float) -> void:
 	if !spatula:
-		scale = Global.t*Vector3(0.0, 0.0, 1.0) + Vector3(1.0, 1.0, 1.0)
+		scale = Global.t*Vector3(0.0, 0.0, 6.0) + Vector3(1.0, 1.0, 1.0)
 	
 
 func _ready() -> void:

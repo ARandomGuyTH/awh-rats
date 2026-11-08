@@ -152,7 +152,7 @@ omni_attenuation = 0.5
 transform = Transform3D(-8.742278e-08, -8.742278e-08, -2, -2, 3.821371e-15, 8.742278e-08, 0, 2, -8.742278e-08, 11.28187, 0.7582753, -7.956665)
 
 [node name="spatula" parent="." unique_id=1174650828 instance=ExtResource("10_bg5fu")]
-transform = Transform3D(0.29999998, 1.7763568e-15, 0, -1.7763568e-15, 0.29999998, 0, 0, 0, 0.29999998, 19.100433, -0.9417372, 0.04724121)
+transform = Transform3D(0.4, 1.7763568e-15, 0, -1.7763568e-15, 0.4, 0, 0, 0, 0.4, 22.100433, -0.9417372, 0.04724121)
 script = ExtResource("11_y87mq")
 
 [node name="Area3D" type="Area3D" parent="spatula" unique_id=1750058046]
