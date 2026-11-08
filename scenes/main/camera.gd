@@ -15,7 +15,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	var centre = (Global.player1pos + Global.player2pos) / 2
-	var target = Vector3(centre.x, centre.y, startpos.z)
+	var target = Vector3(centre.x, centre.y+2, startpos.z)
 	if target.y < 2:
 		target.y = 2
 	position = lerp(position, target, position_smooth_speed*delta)
