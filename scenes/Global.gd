@@ -11,6 +11,9 @@ var player2pos := Vector3.ZERO
 var player1vel := Vector3.ZERO
 var player2vel := Vector3.ZERO
 
+func updateMaxLevel(level : int):
+	maxLevel = maxi(level, maxLevel)
+
 func updatePos(player : String, position : Vector3, velocity : Vector3):
 	match player:
 		"player1":

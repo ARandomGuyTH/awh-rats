@@ -38,10 +38,13 @@ func _physics_process(delta: float) -> void:
 	else:
 		model.run()
 	if model.global_position != target_dir:
-		model.look_at(model.global_position + target_dir, Vector3.UP)
+		if model.name== "moues2":
+			model.look_at(model.global_position + target_dir.rotated(Vector3.UP, PI/2), Vector3.UP)
+		else:
+			model.look_at(model.global_position + target_dir, Vector3.UP)
 	# Apply movement
-	velocity.x = direction.x * SPEED * delta
-	velocity.z = direction.z * SPEED * delta
+	velocity.x = direction.x * SPEED * delta	
+	position.z = startpos.z
 
 	# Add the gravity.
 	if not is_on_floor():
